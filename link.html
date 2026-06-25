@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Yönlendiriliyorsunuz...</title>
+    <script>
+        window.onload = function() {
+            // Anayasa uygulamasının paket adını buraya yaz
+            var packageId = "com.keys1.anayasa2026"; 
+            
+            // Instagram içi tarayıcıyı ezen yönlendirme kodu
+            var intentUrl = "intent://details?id=" + packageId + "#Intent;scheme=market;package=com.android.vending;end";
+            
+            window.location.href = intentUrl;
+            
+            setTimeout(function() {
+                window.location.href = "https://play.google.com/store/apps/details?id=" + packageId;
+            }, 1500);
+        };
+    </script>
+</head>
+<body>
+    <p style="text-align:center; font-family:sans-serif; margin-top:50px; font-size:18px;">
+        Uygulama mağazasına yönlendiriliyorsunuz, lütfen bekleyin...
+    </p>
+</body>
+</html>
